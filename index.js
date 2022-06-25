@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: true }))
 
 const corsOptions ={
-    origin:'https://call-log.netlify.app/', 
+    origin:'*', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
  }
