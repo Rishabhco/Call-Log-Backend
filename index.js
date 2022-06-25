@@ -9,13 +9,15 @@ const port=process.env.PORT||3000
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
+//express body-parser can be used in place of bodyParser 
+
 // parse application/json
 app.use(bodyParser.json())
 
 app.use(express.urlencoded({ extended: true }))
 
 const corsOptions ={
-    origin:'*', 
+    origin:'https://call-log.netlify.app/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
  }
